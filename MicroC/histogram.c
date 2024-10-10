@@ -35,9 +35,6 @@ void histogram(int n, int ns[], int max, int freq[]) {
 
     i = 0;
     while (i < n) {
-        print ns[i];
-        println;
-
         memo[ns[i]] = memo[ns[i]] + 1;
         i = i + 1;
     }
