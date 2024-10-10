@@ -11,5 +11,6 @@ void main(int n) {
     test2[3] = 10;
 
     print --test2[3];
+    print test2[3];
     println;
 }
