@@ -24,7 +24,7 @@ void main(int n) {
 void histogram(int n, int ns[], int max, int freq[]) {
     // max size is 128 using memoization
     int memo[128];
-    int i;
+    int i, j, k;
 
     i = 0;
     while (i < 128) {
@@ -32,15 +32,15 @@ void histogram(int n, int ns[], int max, int freq[]) {
         i = i + 1;
     }
 
-    i = 0;
-    while (i < n) {
-        memo[ns[i]] = memo[ns[i]] + 1;
-        i = i + 1;
+    j = 0;
+    while (j < n) {
+        memo[ns[j]] = memo[ns[j]] + 1;
+        j = j + 1;
     }
 
-    i = 0;
-    while (i < max+1) {
-        freq[i] = memo[i];
-        i = i + 1;
+    k = 0;
+    while (k < max+1) {
+        freq[k] = memo[k];
+        k = k + 1;
     }
 }
