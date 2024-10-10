@@ -24,10 +24,9 @@ void main(int n) {
 void histogram(int n, int ns[], int max, int freq[]) {
     // max size is 128 using memoization
     int memo[128];
-
     int i;
-    i = 0;
 
+    i = 0;
     while (i < 128) {
         memo[i] = 0;
         i = i + 1;
