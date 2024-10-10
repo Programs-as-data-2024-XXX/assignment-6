@@ -67,6 +67,8 @@ rule Token = parse
   | "||"            { SEQOR }                     
   | "&&"            { SEQAND }                     
   | "&"             { AMP }                     
+  | "++"            { PREINC } 
+  | "--"            { PREDEC }
   | "!"             { NOT }                     
   | '('             { LPAR }
   | ')'             { RPAR }

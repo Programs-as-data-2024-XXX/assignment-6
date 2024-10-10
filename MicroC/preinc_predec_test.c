@@ -6,6 +6,6 @@ void main(int n) {
     test = 30;
 
     --test;
-    print test;
+    print --test;
     println;
 }
