@@ -1,6 +1,6 @@
 // micro-C histogram
 
-void main(int n) {
+void main() {
     int ns[7];
     ns[0] = 1;
     ns[1] = 2;
@@ -24,7 +24,9 @@ void main(int n) {
 void histogram(int n, int ns[], int max, int freq[]) {
     // max size is 128 using memoization
     int memo[128];
-    int i, j, k;
+    int i;
+    int j;
+    int k;
 
     i = 0;
     while (i < 128) {
