@@ -1,11 +1,15 @@
 // micro-C histogram
 
 void main(int n) {
-    int test;
+    int test1;
+    test1 = 30;
 
-    test = 30;
+    --test1;
+    print --test1;
 
-    --test;
-    print --test;
+    int test2[30];
+    test2[3] = 10;
+
+    print --test2[3];
     println;
 }
