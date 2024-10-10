@@ -105,8 +105,6 @@ StmtM:  /* No unbalanced if-else */
   | FOR LPAR Expr SEMI Expr SEMI Expr RPAR StmtM  { ForLoop($3, $5, $7, $9)  }
 ;
 
-/* | FOR LPAR Expr SEMI Expr SEMI Expr RPAR StmtM  { For($3, $5, $7, $9)  } */
-
 StmtU:
     IF LPAR Expr RPAR StmtM ELSE StmtU            { If($3, $5, $7)       }
   | IF LPAR Expr RPAR Stmt                        { If($3, $5, Block []) }
