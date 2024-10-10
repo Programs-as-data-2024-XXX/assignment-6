@@ -10,7 +10,7 @@ void main(int n) {
     ns[5] = 2;
     ns[6] = 0;
 
-    int freq[7];
+    int freq[10];
 
     histogram(7, ns, 3, freq);
     print freq[0];
