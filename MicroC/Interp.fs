@@ -133,6 +133,7 @@ let rec exec stmt (locEnv : locEnv) (gloEnv : gloEnv) (store : store) : store =
               if v<>0 then loop (exec body locEnv gloEnv store2)
                       else store2
       loop store
+    (* THIS IS EXERCISE 7.3 *)
     | ForLoop(e1, e2, e3, body) ->
       let (initVal, store1) = eval e1 locEnv gloEnv store
       let rec loop storeCurrent =
